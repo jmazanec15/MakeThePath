@@ -1,0 +1,19 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "My default boilerplate for starting new projects.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmazanec15/boilerplateUno.git"
+  },
+  "author": "Jack Mazanec <jmazane1@nd.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmazanec15/boilerplateUno/issues"
+  },
+  "homepage": "https://github.com/jmazanec15/boilerplateUno#readme"
+}
