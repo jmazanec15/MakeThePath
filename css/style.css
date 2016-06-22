@@ -559,39 +559,50 @@ textarea {
 }
 #board {
   width: 800px;
-  height: 800px;
-  background-color: black;
-  color: white;
+  height: 600px;
+  background-color: green;
 }
-.spots {
-  background: yellow;
-  width: 60px;
-  height: 100px;
-  position: relative;
+#board > .container:nth-child(1) {
+  border: 3px solid red;
+  background-color: #1DA461;
 }
 .cards {
   width: 50px;
   height: 70px;
   position: relative;
+  top: auto;
+  left: auto;
   z-index: 10;
+  border: 2px solid black;
 }
 .circle {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 70px;
   background: red;
-  -moz-border-radius: 50px;
+  position: relative;
+  z-index: 100;
+  bottom: 76px;
+  left: 2px;
+  /*-moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 15px;
   margin: auto;
   position: relative;
   z-index: 100;
-  bottom: 50px;
+  bottom: 50px;*/
 }
 .hand {
   width: 300px;
   height: 100px;
-  background-color: white;
+  background-color: brown;
   position: relative;
+  left: 30%;
+}
+.col-2 {
+  vertical-align: center;
+  position: relative;
+  top: 6px;
+  margin: 8px;
 }
 .col-2 .cards {
   border: 1px solid black;
@@ -603,13 +614,18 @@ textarea {
 }
 .circle1 {
   background: black;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 70px;
+  position: relative;
+  z-index: 100;
+  bottom: 76px;
+  left: 2px;
+  /*height: 30px;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 15px;
   margin: auto;
   position: relative;
   z-index: 100;
-  bottom: 50px;
+  bottom: 50px;*/
 }

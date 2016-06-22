@@ -1,6 +1,7 @@
 //----------------Creating deck---------------------
 // Making 2 decks of cards
 // creates an array deck containg objects as cards
+
 var deck = [];
   for (var i = 0; i < 52; i++) {
     var card = i;
@@ -114,9 +115,13 @@ $.each(col, function(ind, val) {
       dotTrackerUser.push(ind);
       // puts a circle in an appropriate box
       $(val).append('<div class="circle"></div>');
-
       // dot tracker plugged into the function to determine if the user has won
-      didWin(dotTrackerUser);
+      if (didWin(dotTrackerUser)) {
+        alert('we are the champions');
+        location.reload();
+
+
+      };
 
       // specifies that no other circle can be drawn in this box
       noDot[ind] = false;
@@ -156,6 +161,7 @@ $.each(col, function(ind, val) {
         // 3. get rid of card from hand
         // 4. add new card to hand
         // 5. check if won
+        // slow down computer;
 
         // swit determines if the computer has placed a checker
         var swit = true;
@@ -171,14 +177,19 @@ $.each(col, function(ind, val) {
           $.each(col, function(ind, val) {
 
             var cardCur2 = deck[ind].toString();
+
             if (cardCur2 == cardPlay) {
+
               $(val).append('<div class="circle1"></div>');
               // add a value where a chip was laid down
               dotTrackerComp.push(ind);
               // supposed to check if the computer won on the last play
               // NEEDS TO BE FIXED
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-              didWin(dotTrackerComp);
+              if (didWin(dotTrackerComp)) {
+                alert('computers are the champions');
+                location.reload();
+              };
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
               // exits out of the while loop              
               swit = false;
