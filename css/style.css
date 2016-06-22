@@ -601,3 +601,15 @@ textarea {
   width: 50px;
   background: white;
 }
+.circle1 {
+  background: black;
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 15px;
+  margin: auto;
+  position: relative;
+  z-index: 100;
+  bottom: 50px;
+}
