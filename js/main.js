@@ -105,7 +105,7 @@ $.each(col, function(ind, val) {
           if (counter >= 40) {
             counter = 0;
           };
-          computerMove(compHand, col, deck, dotTrackerComp, counter, gameDeck);
+          computerMove(compHand, col, deck, dotTrackerComp, counter, gameDeck, dotTrackerUser);
           if (counter >= 40) {
             counter = 0;
           };

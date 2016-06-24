@@ -1,6 +1,6 @@
 // computer move tracker function
 
-function computerMove(compHand, col, deck, dotTrackerComp, counter, gameDeck) {
+function computerMove(compHand, col, deck, dotTrackerComp, counter, gameDeck, dotTrackerUser) {
 
 
         // swit determines if the computer has placed a checker
@@ -20,8 +20,7 @@ function computerMove(compHand, col, deck, dotTrackerComp, counter, gameDeck) {
 
             var cardCur2 = deck[ind].toString();
 
-            if (cardCur2 === cardPlay && dotTrackerComp.indexOf(cardCur2) === -1) {
-
+            if (cardCur2 === cardPlay && dotTrackerComp.indexOf(cardCur2) === -1 && dotTrackerUser.indexOf(cardCur2) === -1) {
               $(val).append('<div class="circle1"></div>');
               // add a value where a chip was laid down
               dotTrackerComp.push(ind);
@@ -44,8 +43,6 @@ function computerMove(compHand, col, deck, dotTrackerComp, counter, gameDeck) {
             });
 
           };
-          console.log(dotTrackerComp);
-          console.log(compHand);
 
 }
 
