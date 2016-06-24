@@ -33,7 +33,7 @@ function computerMove(compHand, col, deck, dotTrackerComp, counter, gameDeck, do
               };
 
 
-          // creates new hand
+              // creates new hand
               compCardNew = gameDeck[10 + counter].toString();
               compHand[whichMove] = compCardNew; 
               // exits out of the while loop              
