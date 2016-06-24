@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Make a Square</title>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -10,18 +11,29 @@
 <div class="row">
   <div class="col-12">
     <h1 class="Title Page">
-      Make a Square
+      Make-a-Square
     </h1>
   </div>
 </div>
 </header>
+
+<div class="container" id="bull">
+  <div class="row"><div class="col-4"><button class="newGame">new game</button></div></div>
+  <div class="row"><div class="col-4"><button class="rules">rules</button></div></div>
+
+</div>
 
 <div id="board"></div>
 
 
 
 <script src="js/jquery.js"></script>
+<script src="js/shadowBox.js"></script>
+<script src="js/deckManager.js"></script>
+<script src="js/boardMaker.js"></script>
 <script src="js/checkForWin.js"></script>
+<script src="js/computerMove.js"></script>
+<script src="js/tie.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -37,16 +37,37 @@ function didWin(currentChips) {
         //nothing happens
       }
     if ((neg10 && neg11 && neg1) || (neg1 && pos9 && pos10) || (pos10 && pos11 && pos1) || (pos1 && neg9 && neg10)){
-      return true;
-    }  
+      if ((currentChips[i] === 0) || (currentChips[i] === 10) || (currentChips[i] === 20) || (currentChips[i] === 30) || (currentChips[i] === 40)) {
+        if ((pos10 && pos11 && pos1) || (pos1 && neg9 && neg10)) {
+          return true;
+
+        } else {
+
+        }
+      } else if ((currentChips[i] === 9) || (currentChips[i] === 19) || (currentChips[i] === 29) || (currentChips[i] === 39) || (currentChips[i] === 49)) {
+          if ((pos9 && pos10 && neg1) || (neg1 && neg11 && neg10)) {
+            return true;
+        } else {
+
+        }
+      } else {
+    return true; 
+    } 
   }
 }
+}
   return false;
+
 }
 
 
 
+// var a = [39,29,30,40];
 
+// var b = [41,40,31,30];
+
+// console.log(didWin(a)+' should be false');
+// console.log(didWin(b)+' should be true');
 
 
 
